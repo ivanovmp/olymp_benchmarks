@@ -101,7 +101,7 @@ void test_io() {
         for (int& i : read_vec)
             fin >> i;
         auto end = chrono::high_resolution_clock::now();
-        int read_sum = 0;
+        long long read_sum = 0;
         for (int i : read_vec)
             read_sum += i;
         cout << "Reading N int32 (N == " << N << ") took " << pretty_duration(end - start) << " (side effect == " << read_sum << ")" << endl;
